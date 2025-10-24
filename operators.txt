@@ -1,0 +1,499 @@
+>>> 5>6 and 6<7
+False
+>>> 6 or 7
+6
+>>> not 9
+False
+>>> not -6
+False
+>>> not 0
+True
+>>> 7<9
+True
+>>> 9>5
+True
+>>> 7>=
+  File "<python-input-7>", line 1
+    7>=
+       ^
+SyntaxError: invalid syntax
+>>> 8<=0
+False
+>>> 9>=8
+True
+>>> 7 & 8
+0
+>>> 9&5
+1
+>>>  9`0
+  File "<python-input-12>", line 1
+    9`0
+IndentationError: unexpected indent
+>>> 9^6
+15
+>>> 8>>5
+0
+>>> 9<<3
+72
+>>> 5<<3
+40
+>>> 5>>2
+1
+>>> 5>>>2
+  File "<python-input-18>", line 1
+    5>>>2
+       ^
+SyntaxError: invalid syntax
+>>> 5<<<3
+  File "<python-input-19>", line 1
+    5<<<3
+       ^
+SyntaxError: invalid syntax
+>>> num1=10
+>>> type(num1)
+<class 'int'>
+>>> num1 is int
+False
+>>> 5 is int
+<python-input-23>:1: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+False
+>>> 5 is int
+<python-input-24>:1: SyntaxWarning: "is" with 'int' literal. Did you mean "=="?
+False
+>>> type(5) is int
+True
+>>> pe(num1) is int
+Traceback (most recent call last):
+  File "<python-input-26>", line 1, in <module>
+    pe(num1) is int
+    ^^
+NameError: name 'pe' is not defined
+>>> type(num1) is int
+True
+>>>type(num1) is not str
+True
+>>> print(num1)
+10
+>>> numl
+Traceback (most recent call last):
+  File "<python-input-30>", line 1, in <module>
+    numl
+NameError: name 'numl' is not defined. Did you mean: 'num1'?
+>>> print('hi')
+hi
+>>> 'hi'
+'hi'
+>>> num1
+10
+>>> print('hi' + 'hello')
+hihello
+>>> print(num1+10)
+20
+>>> print(num1+'10')
+Traceback (most recent call last):
+  File "<python-input-36>", line 1, in <module>
+    print(num1+'10')
+          ~~~~^~~~~
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> print('hi' + 10)
+Traceback (most recent call last):
+  File "<python-input-37>", line 1, in <module>
+    print('hi' + 10)
+          ~~~~~^~~~
+TypeError: can only concatenate str (not "int") to str
+>>> print('hi' + '10')
+hi10
+>>> print('sum :  ', num1+10)
+sum :   20
+>>> print('sum :  '+ '\n', num1+10)
+sum :
+ 20
+>>> input()
+5
+'5'
+>>> input()
+hi
+'hi'
+>>> input()
+True
+'True'
+>>> input('Enter the number')
+Enter the number5
+'5'
+>>> input('Enter the number:')
+Enter the number:10
+'10'
+>>> int(input('enter a num:'))
+enter a num:4
+4
+>>> float(input('enter a num:'))
+enter a num:5
+5.0
+>>> bool(input('enter a num:'))
+enter a num:5
+True                                                            
+>>> bool(input('enter a num:'))
+enter a num:0
+True
+>>> bool(input('enter a num:'))
+enter a num:-4
+True
+>>> bool(input('enter a num:'))
+enter a num:
+False
+
+
+status     T    T    T    T     F
+data       5    10   5   -8    Empty
+
+
+int      5    0    -9    ERROR
+bool     T    T     T     F
+
+>>> "hi"
+'hi'
+>>> 'hi'
+'hi'
+>>> "ram's house"
+"ram's house"
+>>> 'ram's house'
+  File "<python-input-55>", line 1
+    'ram's house'
+                ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> 'ram"s house'
+'ram"s house'
+>>> str1="hello there !"
+>>> str1
+'hello there !'
+>>> len(str1)
+13
+>>>str1[0]
+'h'
+str1[3]
+'l'
+>>> str1[10]
+'e'
+>>>str1[12]
+'!'
+>>> str1[11]
+' '
+>>> str1[10]
+'e'
+>>> str1[12]
+'!'
+>>> str1[-12]
+'e'
+>>> str1[-1]
+'!'
+>>> str1[0:5]
+'hello'
+>>> str1[0:3]
+'hel'
+>>> str1[5:10]
+' ther'
+>>> str1[6:12]
+'there '
+>>>str1[6:]
+'there !'
+step values:
+>>> str1[0:10:1]
+'hello ther'
+>>> str1[0:10:2]
+'hlote'
+>>> str1[0:10:3]
+'hltr'
+>>> str1[::3]
+'hltr!'
+>>> str1[::6]
+'ht!'
+>>> str1[-3:-5]
+''
+>>>str1[-6:-8]
+''
+>>> str1[-6:-4]
+'he'
+>>> str1[-10:-6]
+'lo t'
+>>>>>> str1[-10:-1:2]
+'l hr '
+>>> str1[-10:-1:3]
+'ltr'
+>>> str1[-10:-2:3]
+'ltr'
+>>> str1[-12:-2:3]
+'eohe'
+>>> str1.capitalize()
+'Hello there !'
+>>> str1.lower()
+'hello there !'
+>>> str1.upper()
+'HELLO THERE !'
+>>> str1.count()
+Traceback (most recent call last):
+  File "<python-input-108>", line 1, in <module>
+    str1.count()
+    ~~~~~~~~~~^^
+TypeError: count expected at least 1 argument, got 0
+>>> str1.count('h')
+2
+>>> str1.count('!')
+1
+>>>str1.endswith('!')
+True
+>>> str1.endswith('e')
+False
+>>> str1.find('t')
+6
+>>> str1.index('t')
+6
+>>> str1.index('e')
+1
+>>> str1.index('i')
+Traceback (most recent call last):
+  File "<python-input-116>", line 1, in <module>
+    str1.index('i')
+    ~~~~~~~~~~^^^^^
+ValueError: substring not found
+>>> str1.encode('utf-8')
+b'hello there !'
+>>> str1.encode('utf-8')
+b'hello there !'
+>>> str1.encode('utf-16')
+b'\xff\xfeh\x00e\x00l\x00l\x00o\x00 \x00t\x00h\x00e\x00r\x00e\x00 \x00!\x00'
+>>> str1.replace('o','0')
+'hell0 there !'
+>>>str1.replace('e','1')
+'h1llo th1r1 !'
+>>> str1.split()
+['hello', 'there', '!']
+>>> str1.split('_')
+['hello there !']
+>>> str2='10-12-2025'
+>>> str2.split('_')
+['10-12-2025']
+>>> str2.join(str2)
+'110-12-2025010-12-2025-10-12-2025110-12-2025210-12-2025-10-12-2025210-12-2025010-12-2025210-12-20255'
+>>> str1.join(str2)
+'1hello there !0hello there !-hello there !1hello there !2hello there !-hello there !2hello there !0hello there !2hello there !5'
+>>>str1.strip()
+'hello there !'
+>>> str1.strip('e')
+'hello there !'
+>>> str3='    hi    '
+>>> str3
+'    hi    '
+>>> str3.strip()
+'hi'
+>>>str1='hello'
+>>> str1
+'hello'
+>>> str1='hi'
+>>> str1
+'hi'
+>>> id(str1)
+140716529636792
+>>> str1='india'
+>>> id(str1)
+2702198409088
+>>> numbers=[10,20,30]
+>>> numbers
+[10, 20, 30]
+>>> id(numbers)
+2702198571712
+>>>numbers.append(40)
+>>> numbers
+[10, 20, 30, 40]
+>>> id(numbers)
+2702198571712
+>>> numbers.append(40)
+>>> numbers
+[10, 20, 30, 40, 40]
+>>> numbers[2]
+30
+>>> numbers[4]
+40
+>>> numbers[3]=100
+>>> numbers
+[10, 20, 30, 100, 40]
+>>> numbers.remove(100)
+>>> numbers
+[10, 20, 30, 40]
+>>> numbers [3]=100
+>>> numbers
+[10, 20, 30, 100]
+>>> numbers.append(40)
+>>> numbers.count(4)
+0
+>>> numbers.count(4)
+0
+>>> numbers.append(40)
+>>> numbers.count(40)
+2
+>>> numbers.index(40)
+4
+>>> numbers.insert(4,500)
+>>> numbers
+[10, 20, 30, 100, 500, 40, 40]
+>>> numbers.remove(500)
+>>> numbers
+[10, 20, 30, 100, 40, 40]
+>>>numbers.remove(40)
+>>> numbers
+[10, 20, 30, 100, 40]
+>>> numbers.pop()
+40
+>>> numbers
+[10, 20, 30, 100]
+>>> numbers.pop(-2)
+30
+>>>numbers
+[10, 20, 100]
+>>> numbers.reverse()
+>>> numbers
+[100, 20, 10]
+>>> numbers.sort()
+>>> numbers
+[10, 20, 100]
+>>> numbers.sort(reverse=True)
+>>> numbers
+[100, 20, 10]
+>>> nums=numbers.copy()
+>>> numbers
+[100, 20, 10]
+>>> id(numbers)
+2702198571712
+>>> id(nums)
+2702198586880
+>>> nums1=numbers
+>>> id(nums1)
+2702198571712
+>>> numbers.extend(nums)
+>>> numbers
+[100, 20, 10, 100, 20, 10]
+>>> numbers.clear()
+>>> numbers
+[]
+>>>del(numbers)
+>>> numbers
+Traceback (most recent call last):
+  File "<python-input-195>", line 1, in <module>
+    numbers
+NameError: name 'numbers' is not defined. Did you forget to import 'numbers'?
+>>>tup1=(10,20,30)
+>>> tup1
+(10, 20, 30)
+>>> tup1(3)
+Traceback (most recent call last):
+  File "<python-input-200>", line 1, in <module>
+    tup1(3)
+    ~~~~^^^
+TypeError: 'tuple' object is not callable
+>>> tup1(2)
+Traceback (most recent call last):
+  File "<python-input-201>", line 1, in <module>
+    tup1(2)
+    ~~~~^^^
+TypeError: 'tuple' object is not callable
+>>> tup1[2]
+30
+>>> tup1.count(30)
+1
+>>> tup1.index(20)
+1
+>>> tup1.count(30)
+1
+>>> del(tup1)
+>>> tup1
+Traceback (most recent call last):
+  File "<python-input-209>", line 1, in <module>
+    tup1
+NameError: name 'tup1' is not defined. Did you mean: 'tuple'?
+>>>set1={22,11,33,55,9,7}
+>>> set1
+{33, 55, 22, 7, 9, 11}
+>>> set1[2]
+Traceback (most recent call last):
+  File "<python-input-212>", line 1, in <module>
+    set1[2]
+    ~~~~^^^
+TypeError: 'set' object is not subscriptable
+>>>set1.add(43)
+>>> set1
+{33, 55, 22, 7, 9, 11, 43}
+>>> set1.add(27)
+>>> set1
+{33, 55, 22, 7, 27, 9, 11, 43}
+>>>set2={100,200,300}
+>>> set2
+{200, 100, 300}
+>>> set1.union(set2)
+{33, 100, 7, 200, 9, 11, 43, 300, 22, 55, 27}
+>>> set3(set1.union(set2))
+Traceback (most recent call last):
+  File "<python-input-220>", line 1, in <module>
+    set3(set1.union(set2))
+    ^^^^
+NameError: name 'set3' is not defined. Did you mean: 'set1'?
+>>> set3=set1.union(set2)
+>>> set3
+{33, 100, 7, 200, 9, 11, 43, 300, 22, 55, 27}
+>>> set3.intersection(set2)
+{200, 100, 300}
+>>> set4=set3.intersection(set2)
+>>> set4
+{200, 100, 300}
+>>> set5=set.difference(set4)
+>>> set5
+{200, 100, 300}
+>>> set5=set1.difference(set4)
+>>> set5
+{33, 7, 9, 11, 43, 22, 55, 27}
+>>> set1.discard(33)
+>>> set1
+{55, 22, 7, 27, 9, 11, 43}
+>>> dict1={1:10,2:20}
+>>> dict1
+{1: 10, 2: 20}
+>>> dict1[2
+... ]
+20
+>>> dict1[2]
+20
+>>> dict1[2]=200
+>>> dict1
+{1: 10, 2: 200}
+>>> dict2={'rno':'123','name':'AAA'}
+>>> dict2
+{'rno': '123', 'name': 'AAA'}
+>>> dict2['rno']
+'123'
+>>> dict2['rno']=123
+>>> dict2['rno']
+123
+>>> dict2
+{'rno': 123, 'name': 'AAA'}
+>>> dict2['rnoo']
+Traceback (most recent call last):
+  File "<python-input-244>", line 1, in <module>
+    dict2['rnoo']
+    ~~~~~^^^^^^^^
+KeyError: 'rnoo'
+>>> dict2['ph']=123456789
+>>> dict2
+{'rno': 123, 'name': 'AAA', 'ph': 123456789}
+>>> dict2['ph']
+123456789
+>>>dict1.get('ph')
+>>> ph=dict1.get('ph')
+>>> ph
+>>> ph=dict2.get('ph')
+>>> ph
+123456789
+>>> dict2.keys()
+dict_keys(['rno', 'name', 'ph'])
+>>>
+
+
+
+
