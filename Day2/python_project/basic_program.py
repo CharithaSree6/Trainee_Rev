@@ -1,0 +1,11 @@
+print("Hello World !")
+
+num1 = int(input("enter the number:"))
+num2 = int(input("enter another number:"))
+print('sum: ',num1+num2)
+print('different:' ,num1 - num2)
+print('product:',num1*num2)
+print('Int Div:',num1//num2)
+print('Div:',num1/num2)
+print('remainder:',num1%num2)
+print('power:',num1**num2)

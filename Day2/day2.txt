@@ -1,0 +1,35 @@
+modularized code means break the code
+
+IDE-Integrated Development Environment
+pychrum
+two types
+proffical addition -- advance  feature
+community addition --basic feature
+
+code:
+print("Hello World !")
+
+num1 = int(input("enter the number:"))
+num2 = int(input("enter another number:"))
+print('sum: ',num1+num2)
+print('different:' ,num1 - num2)
+print('product:',num1*num2)
+print('Int Div:',num1//num2)
+print('Div:',num1/num2)
+print('remainder:',num1%num2)
+print('power:',num1**num2)
+
+
+output:
+Hello World !
+enter the number:6
+enter another number:3
+sum:  9
+different: 3
+product: 18
+Int Div: 2
+Div: 2.0
+remainder: 0
+power: 216
+
+
