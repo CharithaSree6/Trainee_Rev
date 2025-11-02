@@ -86,7 +86,7 @@ print("Random array with randint:\n", array_randint)
 Indexing and Slicing
 Reshaping Arrays
 Change the shape of an array without changing its data using the
- reshape() method.
+reshape() method.
 
 '''
 

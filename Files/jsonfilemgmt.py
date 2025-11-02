@@ -30,6 +30,6 @@ filename = "data.json"
 write_json(filename)
 print("Data read from JSON file:")
 read_json(filename)
-#delete_json(filename)
+delete_json(filename)
 
 
